@@ -6,3 +6,11 @@
 2019-11-28 13:24:39,345 - D:\newhope_pro\api_autotestpro\common\case_param.py[line:38] - INFO: 共获取到2条用例参数
 2019-11-28 13:25:33,299 - D:\newhope_pro\api_autotestpro\common\case_param.py[line:38] - INFO: 共获取到2条用例参数
 2019-11-28 13:25:39,206 - D:\newhope_pro\api_autotestpro\common\myemail.py[line:44] - INFO: 报告邮件已发送
+2019-11-29 11:20:32,961 - C:/Users/jctong/Desktop/new1/ApiTest/common/getparam.py[line:22] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为name 'params' is not defined
+2019-11-29 11:21:30,491 - C:/Users/jctong/Desktop/new1/ApiTest/common/getparam.py[line:22] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为name 'params' is not defined
+2019-11-29 11:28:46,798 - C:/Users/jctong/Desktop/new1/ApiTest/common/getparam.py[line:51] - WARNING: 未找到case_name为【test_login_success】的数据
+2019-11-29 14:23:09,669 - C:\Users\jctong\Desktop\new1\ApiTest\common\getparam.py[line:22] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为No sheet named <'LoginCase'>
+2019-11-29 14:23:09,671 - C:\Users\jctong\Desktop\new1\ApiTest\common\getparam.py[line:22] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为No sheet named <'LoginCase'>
+2019-11-29 14:48:37,925 - C:\Users\jctong\Desktop\new1\ApiTest\common\getparam.py[line:23] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为not enough arguments for format string
+2019-11-29 14:48:37,979 - C:\Users\jctong\Desktop\new1\ApiTest\common\getparam.py[line:23] - ERROR: 【C:\Users\jctong\Desktop\new1\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为not enough arguments for format string
+2019-11-29 15:39:39,439 - C:\Users\jctong\Desktop\new1\ApiTest\common\myemail.py[line:44] - INFO: 报告邮件已发送
