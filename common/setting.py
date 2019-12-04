@@ -25,7 +25,7 @@ class Setting():
         times = time.strftime("%Y%m%d%H%M%S")
         self.REPORT_NAME = self.PROJECT_NAME+times+'report.html'
         #邮件中正文内容
-        self.CONTENT = 'Hi all,\n    本次测试结果已生成，请查阅附件(本邮件是自动化测试邮件，请勿回复！)。谢谢！'
+        self.CONTENT = 'Hi all,\n    本次测试结果已生成，请查阅附件(本邮件是自动化测试邮件，请勿回复！)。为了更好的报告展示，请您使用chrome打开报告。谢谢！'
         #邮件中展示自定义附件名
         self.File_NAME = 'smartpig_report.html'
         # 日志的文件名

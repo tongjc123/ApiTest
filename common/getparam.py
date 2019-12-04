@@ -16,7 +16,7 @@ class OpExcel():
                 title = sheet.row_values(0)
                 for i in range(1,sheet.nrows):      #循环每一行
                     row_data = sheet.row_values(i)      #获取每行数据
-                    data = dict(zip(title,row_data))    #讲第标题和对应数据组装成dict
+                    data = dict(zip(title,row_data))    #将第标题和对应数据组装成dict
                     params_list.append(data)
 
             except Exception as e:
@@ -46,8 +46,8 @@ class OpExcel():
     def get_test_data(self,params_list,case_name):
 
         for case_data in params_list:
-            if case_name == case_data['case_name']: #当从列表中找到对应case_name的数据时，返回该字典
-                return(case_data)
+            if case_name == case_data['case_name']: #当从列表中找到对应用例名的数据时，返回该字典
+                return case_data
 
 
 

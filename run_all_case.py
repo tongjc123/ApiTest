@@ -5,15 +5,16 @@ from common.setting import bases  #引入Setting的实例化对象
 from common.myemail import mail_send  #引入MailSend的实例化对象
 import sys
 import os
+
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(curPath)
 
 
-def add_case(rule = "test*.py"):
+def add_case(rule = "*case.py"):
     """第一步，获取setting的CASE_PATH,组装case,返回case列表"""
     discover = unittest.defaultTestLoader.discover(bases.CASE_PATH,pattern=rule)
-    print(discover)
+    #print(discover)
     return discover
 
 

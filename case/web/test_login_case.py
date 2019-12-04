@@ -5,13 +5,13 @@ from common.getparam import opexcel
 from common.log import atp_log
 
 class LoginCase(MyBase):
-    u"""登录成功及失败场景用例"""
+    u"""通过case_name驱动"""
     #def setUp(self):
         #warnings.simplefilter("ignore",ResourceWarning) #忽略ResourceWarning
         #self.s = requests.session()
 
     def test_login_success(cls):
-
+        u"""登录成功场景"""
         test_login_success_data = opexcel.get_test_data(opexcel.get_param("LoginCase"),
                                                         "test_login_success")  # 类名与sheet页名一致,用例方法名与excel中case_name一致
         if not test_login_success_data:
@@ -26,9 +26,10 @@ class LoginCase(MyBase):
                         verify = False)
         result = json.loads(res.text)["code"] #从请求返回中获取关键字
         #se1 = "SUCCESS"  #登录成功则返回SUCCESS
-        cls.assertEqual(expect_res,result)
+        cls.assertEqual(expect_res,result) #断言
 
     def test_login_fail(cls):
+        u"""登录失败场景"""
         test_login_fail_data = opexcel.get_test_data(opexcel.get_param("LoginCase"),
                                                      "test_login_fail")  #
         if not test_login_fail_data:
