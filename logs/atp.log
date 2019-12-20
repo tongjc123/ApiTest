@@ -1,2 +1,22 @@
-2019-12-03 16:57:55,946 - C:\Users\jctong\Desktop\API\ApiTest\common\getparam.py[line:23] - ERROR: 【C:\Users\jctong\Desktop\API\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为eval() arg 1 must be a string, bytes or code object
-2019-12-03 17:01:19,244 - C:\Users\jctong\Desktop\API\ApiTest\common\getparam.py[line:27] - ERROR: 【C:\Users\jctong\Desktop\API\ApiTest\params\interface.xlsx】excel参数获取失败，错误信息为'list' object has no attribute 'endswith'
+2019-12-20 09:50:40,170 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2019-12-20 09:50:40,174 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:18] - INFO: ======ddt驱动模式======
+2019-12-20 09:50:40,174 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:19] - INFO: ======setUp======
+2019-12-20 09:50:44,391 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:30] - INFO: 接口调用......
+2019-12-20 09:50:44,391 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:34] - INFO: 断言：【SUCCESS】？=【SUCCESS】
+2019-12-20 09:50:44,391 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:39] - INFO: ======tearDown======
+2019-12-20 09:50:44,394 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:18] - INFO: ======ddt驱动模式======
+2019-12-20 09:50:44,394 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:19] - INFO: ======setUp======
+2019-12-20 09:50:44,430 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:30] - INFO: 接口调用......
+2019-12-20 09:50:44,430 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:34] - INFO: 断言：【用户名或密码错误】？=【用户名或密码错误】
+2019-12-20 09:50:44,430 - C:\Users\jctong\Desktop\API\ApiTest\case\web\ddt_login_case.py[line:39] - INFO: ======tearDown======
+2019-12-20 09:50:44,431 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2019-12-20 09:50:44,431 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2019-12-20 09:50:44,431 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:37] - INFO: ==========测试账号密码错误登录失败场景==========
+2019-12-20 09:50:44,433 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:43] - INFO: 读取URL--【http://web.test4.smartpig.bajietong.net/api/v2/base/account/login】
+2019-12-20 09:50:44,433 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:46] - INFO: 接口参数--【{"userName":"tongjc","password":"12687c51cd111f79bcfbd19407adb36e410","verificationCode":"ds","cancelToken":{"promise":{}}}】
+2019-12-20 09:50:44,468 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:54] - INFO: 断言：【用户名或密码错误】?=【用户名或密码错误】
+2019-12-20 09:50:44,468 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:15] - INFO: ==========测试账号密码正确登录成功场景==========
+2019-12-20 09:50:44,471 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:21] - INFO: 读取URL--【http://web.test4.smartpig.bajietong.net/api/v2/base/account/login】
+2019-12-20 09:50:44,471 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:24] - INFO: 接口参数--【{"userName":"tongjc","password":"12687c51cdf79bcfbd19407adb36e410","verificationCode":"ds","cancelToken":{"promise":{}}}】
+2019-12-20 09:50:48,569 - C:\Users\jctong\Desktop\API\ApiTest\case\web\test_login_case.py[line:32] - INFO: 断言：【SUCCESS】?=【SUCCESS】
+2019-12-20 09:50:48,569 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====

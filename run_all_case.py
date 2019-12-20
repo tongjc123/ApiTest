@@ -35,9 +35,9 @@ def run_case():
 
 if __name__ == '__main__':
 
-    smtp_dict = bases.SMTP_DICT #获取参数
-    mail_send.send_mail(smtp_dict, run_case())  #直接调用邮件发送即可运行所有用例
-    #run_case()
+    #smtp_dict = bases.SMTP_DICT #获取参数
+    #mail_send.send_mail(smtp_dict, run_case())  #直接调用邮件发送即可运行所有用例
+    run_case()
 
 
 
