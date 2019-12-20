@@ -5,6 +5,8 @@ from common.setting import bases  #引入Setting的实例化对象
 from common.myemail import mail_send  #引入MailSend的实例化对象
 import sys
 import os
+from common.log import atp_log
+
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -35,9 +37,10 @@ def run_case():
 
 if __name__ == '__main__':
 
-    #smtp_dict = bases.SMTP_DICT #获取参数
-    #mail_send.send_mail(smtp_dict, run_case())  #直接调用邮件发送即可运行所有用例
-    run_case()
+    smtp_dict = bases.SMTP_DICT #获取参数
+    atp_log.info("获取邮件参数,发送邮件...")
+    mail_send.send_mail(smtp_dict, run_case())  #直接调用邮件发送即可运行所有用例
+    #run_case()
 
 
 
