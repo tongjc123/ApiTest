@@ -25,13 +25,14 @@ class MailSend():
         content = bases.CONTENT  # 获取Setting对象属性（正文内容）
         textApart = MIMEText(content)
 
-        # 添加附件
-        htmlApart = MIMEApplication(open(report, 'rb').read())  # 读取附件
-        htmlApart.add_header('Content-Disposition', 'attachment', filename=bases.File_NAME)  # 邮件中展示的附件名称可以自定义
-
         # 组装邮件
         msg = MIMEMultipart()
-        msg.attach(htmlApart)  # 附件
+        # 添加多个附件
+        for i in range(len(report)):
+            htmlApart = MIMEApplication(open(report[i], 'rb').read())  # 读取附件
+            htmlApart.add_header('Content-Disposition', 'attachment', filename=report[i].split('\\')[-1])  # 邮件中展示的附件名称可以自定义
+            msg.attach(htmlApart)  # 附件
+
         msg.attach(textApart)  # 邮件正文
         msg['Subject'] = smtp_dict["subject"]  # 设置邮件主题
         msg['From'] = formataddr([smtp_dict["from"], smtp_dict["send_user"]])  # 设置发件人昵称
@@ -48,3 +49,4 @@ class MailSend():
             print("邮件发送失败报错信息为：%s" % se)
 
 mail_send = MailSend()
+

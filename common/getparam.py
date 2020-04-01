@@ -1,10 +1,14 @@
-import xlrd,os
+import xlrd,os,json
+import jsonpath
 from xlutils import copy
 from common.log import atp_log
 from common.setting import bases
 
 class OpExcel():
-    """从excel中读取参数，并转换成字典"""
+    """从excel中读取参数，并转换 成字典"""
+    def __init__(self):
+        # 用一个字典来接收每个请求返回的数据，作为后面有参数关联的全局参数
+        self.result_dict = {}
 
     def get_param(self,sheet_name):
         param_path = os.path.join(bases.PARAM_PATH, bases.PARAM_NAME)
@@ -49,10 +53,49 @@ class OpExcel():
             if case_name == case_data['case_name']: #当从列表中找到对应用例名的数据时，返回该字典
                 return case_data
 
+    #获取json中参数
+    def get_json_data(self,keyname):
+        json_path = os.path.join(bases.PARAM_PATH,"data.json")
+        with open(json_path) as f:
+            data = json.loads(f.read())[keyname]
+        return data
+
+    #将读取到的参数进行处理
+    def convert_data(self,sheet):
+        data = self.get_param(sheet)
+        for i in data:
+            if i['data'] != '':
+                if i['data'].endswith('}'):
+                    i['data'] = json.loads(i['data'])
+                try:
+                    i['data'] =self.get_json_data(i['data'])
+                except:
+                    atp_log.info("不需从json文件取数据")
+        return data
+
+    #关联参数提取
+    def get_response_data(self,str, regex):
+        if str !='' and regex !='':
+            pyjson = json.loads(str)
+            data =jsonpath.jsonpath(pyjson,regex)
+            if isinstance(data,list):
+                return data[0]  #jsonpath提取返回结果为list
+            else:
+                atp_log.error('关联参数获取为None')
+                return ''
+        else:
+            atp_log.info('返回参数为空或Excel中depend_data为空')
 
 
 opexcel = OpExcel() #实例化
 
+if __name__ == '__main__':
+    import requests
+    params=opexcel.convert_data("LoginCase")
+    req = requests.session()
+    req.post(url =params[0]['url'],json = params[0]['data'])
+    res = req.post(url =params[2]['url'] ,headers = {'RSESSIONID_NAME':'82f8192546aa5d5b4a3099e8361ec525'},json = params[2]['data'])
+    print(res.text)
 
 
 

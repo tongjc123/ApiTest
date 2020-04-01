@@ -1,6 +1,0 @@
-2019-11-25 10:19:41,124 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:50] - INFO: 报告邮件已发送
-2019-11-25 10:57:47,460 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:44] - INFO: 报告邮件已发送
-2019-11-25 10:59:48,006 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:44] - INFO: 报告邮件已发送
-2019-11-25 12:11:47,339 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:44] - INFO: 报告邮件已发送
-2019-11-25 14:09:02,739 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:47] - ERROR: 邮件发送失败！！(501, b'mail from address must be same as authorization user', 'tongjc')
-2019-11-25 14:10:42,975 - D:\Python_Jobs\api_autotest1\api_autotestpro\common\myemail.py[line:44] - INFO: 报告邮件已发送

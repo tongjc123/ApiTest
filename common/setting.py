@@ -2,7 +2,7 @@ import os.path
 import time
 
 class Setting():
-    """存放所有基础信息，方便管理"""
+    """存放全局基础信息，方便管理"""
     def __init__(self):
         self.BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.SMTP_DICT = {
@@ -10,7 +10,7 @@ class Setting():
         "send_user": "tongjc@newhope.cn",  # 发送邮件的邮箱账号
         #"send_pwd": "lqtfbacgzwwkhjbg",  # 发送邮件的账号密码
         "send_pwd" : "Tt1140720529",
-        "sender": "tongjc@newhope.cn",  # 显示在邮件中的发件人
+        "sender": "tongjc@newhope.cn",  # 显示在邮件中的发件人,必须与send_user一致
         "receiver": ["1162856094@qq.com"],  # 收件邮箱地址
         "subject": "smartpig自动化测试报告",  # 邮件主题
         "from": "smartpig自动化平台"  #邮件发送方
@@ -38,5 +38,7 @@ class Setting():
         self.PARAM_PATH = os.path.join(self.BASE_PATH,'params')
         # 用例参数文件名
         self.PARAM_NAME = 'interface.xlsx'
+        # 测试结果文件名
+        self.RESULT_NAME = 'interface.xls'
 
 bases = Setting()   #实例化Setting
