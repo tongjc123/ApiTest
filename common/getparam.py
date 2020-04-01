@@ -9,7 +9,7 @@ class OpExcel():
     def __init__(self):
         # 用一个字典来接收每个请求返回的数据，作为后面有参数关联的全局参数
         self.result_dict = {}
-
+    #从excel提取list[dict{}]
     def get_param(self,sheet_name):
         param_path = os.path.join(bases.PARAM_PATH, bases.PARAM_NAME)
         params_list = []
@@ -91,11 +91,13 @@ opexcel = OpExcel() #实例化
 
 if __name__ == '__main__':
     import requests
-    params=opexcel.convert_data("LoginCase")
-    req = requests.session()
-    req.post(url =params[0]['url'],json = params[0]['data'])
-    res = req.post(url =params[2]['url'] ,headers = {'RSESSIONID_NAME':'82f8192546aa5d5b4a3099e8361ec525'},json = params[2]['data'])
-    print(res.text)
+    # params=opexcel.convert_data("LoginCase")
+    # req = requests.session()
+    # req.post(url =params[0]['url'],json = params[0]['data'])
+    # res = req.post(url =params[2]['url'] ,headers = {'RSESSIONID_NAME':'82f8192546aa5d5b4a3099e8361ec525'},json = params[2]['data'])
+    # print(res.text)
+    print(opexcel.get_param("LoginCase"))
+
 
 
 

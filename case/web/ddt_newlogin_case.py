@@ -16,7 +16,6 @@ class NewLoginCase(MyBase):
 
     @ddt.data(*params)
     def test_run_case(cls,i):
-
         result_dict = opexcel.result_dict   #全局字典
         if i['run'].lower() == 'yes':
             #准备请求参数
@@ -48,10 +47,6 @@ class NewLoginCase(MyBase):
             except Exception as e:
                 atp_log("测试结果写入失败！！")
 
-
-    def tearDown(self):
-
-        pass
 
 if __name__ == '__main__':
    MyBase.main()

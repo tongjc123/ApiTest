@@ -23,7 +23,7 @@ class MyLogger():
         bl.setFormatter(fmt)                         # 设置文件里面写入的日志格式
         logger.addHandler(cl)
         logger.addHandler(bl)
-        self.logger = logger                         # 直接在这里实例化，用的时候就不用再实例化了
+        self.logger = logger
 
 path=os.path.join(bases.LOG_PATH,bases.LOG_NAME)         #拼好日志的绝对路径
 atp_log = MyLogger(path,bases.LEVEL).logger             #直接在这里实例化，用的时候就不用再实例化了
