@@ -89,14 +89,18 @@ class NewLoginCase(MyBase):
                     depend_data = 
                   opexcel.get_response_data(result_dict[i['depend_id']],i['depend_data']) #获取依赖的返回数据                    
                 	if method == 'delete':                        
-                    	url = os.path.join(url, depend_data) #将url拼接                    					else:                        
-                        data = data.replace('$',depend_data)  #如果是json中的依赖参数，就替换                 except Exception as e:                    
+                    	url = os.path.join(url, depend_data) #将url拼接
+                    else:
+                        data = data.replace('$',depend_data)  #如果是json中的依赖参数，就替换
+                except Exception as e:
                     atp_log.error("获取返回依赖数据失败--%s"%e)            
-            result = myRequest.run_main(method, url, data)            			 					result_dict[i['id']] = result #将返回结果添加到全局字典            
+            result = myRequest.run_main(method, url, data)
+            result_dict[i['id']] = result #将返回结果添加到全局字典
             print(result_dict)            
             cls.assertIn(expect, result)            
             try:                
-                if expect in result:                    			  										cls.writeResult.writeresult(row, "测试通过")                
+                if expect in result:
+                    cls.writeResult.writeresult(row, "测试通过")
                 else:                    
                     cls.writeResult.writeresult(row, "测试失败")            
                 except Exception as e:                
