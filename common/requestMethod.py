@@ -16,22 +16,22 @@ class RunMethod():
             res = self.requests.post(url =url,headers =header, data =data)
         else:
             res = self.requests.post(url=url, data =data)
-        return res.text
+        return res
 
     def get_main(self, url, header=None, data = None):
         if header ==None:
             res = self.requests.get(url=url, data=data)
         else:
             res = self.requests.get(url=url, headers=header, data=data)
-        return res.text
+        return res
 
     def postjson_main(self,url,data=None):
         res = self.requests.post(url=url, json=data)
-        return res.text
+        return res
 
     def delete_main(self,url,data = None):
         res = self.requests.delete(url = url,json = data)
-        return res.text
+        return res
 
     def run_main(self, method, url, data=None):
         if method =='postjson':

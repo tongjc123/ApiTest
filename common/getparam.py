@@ -48,7 +48,7 @@ class OpExcel():
         return param_dic
     """
     def get_test_data(self,params_list,case_name):
-
+        #本方法暂时没用
         for case_data in params_list:
             if case_name == case_data['case_name']: #当从列表中找到对应用例名的数据时，返回该字典
                 return case_data
@@ -57,18 +57,28 @@ class OpExcel():
     def get_json_data(self,keyname):
         json_path = os.path.join(bases.PARAM_PATH,"data.json")
         with open(json_path) as f:
-            data = json.loads(f.read())[keyname]
+            data = json.loads(f.read())[keyname]  #读取对应的json参数
         return data
+
+    #多个依赖参数分割
+    def relation_data(self,str):
+        list_data = []
+        if str !='':
+            if ',' in str:
+                list_data = str.split(',')
+            else:
+                list_data.append(str)
+        return list_data
 
     #将读取到的参数进行处理
     def convert_data(self,sheet):
         data = self.get_param(sheet)
         for i in data:
             if i['data'] != '':
-                if i['data'].endswith('}'):
-                    i['data'] = json.loads(i['data'])
+                if i['data'].endswith('}'):  #如果以｝结尾，表示本身是json参数
+                    i['data'] = json.loads(i['data'])   #本身是json，直接转换为字典即可
                 try:
-                    i['data'] =self.get_json_data(i['data'])
+                    i['data'] =self.get_json_data(i['data'])   #否则就取json文件中对应的json
                 except:
                     atp_log.info("不需从json文件取数据")
         return data
@@ -76,8 +86,8 @@ class OpExcel():
     #关联参数提取
     def get_response_data(self,str, regex):
         if str !='' and regex !='':
-            pyjson = json.loads(str)
-            data =jsonpath.jsonpath(pyjson,regex)
+            pyjson = json.loads(str)   #返回参数的json字串转换为dict
+            data =jsonpath.jsonpath(pyjson,regex)  #根据jsonpath表达式查找对应数据
             if isinstance(data,list):
                 return data[0]  #jsonpath提取返回结果为list
             else:
@@ -96,7 +106,10 @@ if __name__ == '__main__':
     # req.post(url =params[0]['url'],json = params[0]['data'])
     # res = req.post(url =params[2]['url'] ,headers = {'RSESSIONID_NAME':'82f8192546aa5d5b4a3099e8361ec525'},json = params[2]['data'])
     # print(res.text)
-    print(opexcel.get_param("LoginCase"))
+
+    #print(opexcel.get_param("LoginCase"))
+
+    print(opexcel.relation_data('smaaa,hshha'))
 
 
 

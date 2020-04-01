@@ -1,0 +1,90 @@
+2020-01-13 10:32:32,660 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 10:32:32,666 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 10:32:32,667 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 10:32:33,497 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_api1et9jpd3kbu6yf0rqkt2t4b5v.node_sales_api,LX-WXSRF-JTOKEN=92daffee-bc28-4bc7-a85d-9db14e7d8406】
+2020-01-13 10:32:33,499 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_api1et9jpd3kbu6yf0rqkt2t4b5v.node_sales_api;LX-WXSRF-JTOKEN=92daffee-bc28-4bc7-a85d-9db14e7d8406】
+2020-01-13 10:32:33,500 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 10:32:33,890 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 10:32:33,891 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:46] - INFO: 断言结果【None】
+2020-01-13 10:32:33,892 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 10:33:30,429 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 10:33:30,431 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 10:33:30,431 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 10:33:31,010 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_api5738cce6fnumhpu1lrfz281q.node_sales_api,LX-WXSRF-JTOKEN=0d380af0-2104-40a7-8aed-1e8c1eb0addc】
+2020-01-13 10:33:31,012 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_api5738cce6fnumhpu1lrfz281q.node_sales_api;LX-WXSRF-JTOKEN=0d380af0-2104-40a7-8aed-1e8c1eb0addc】
+2020-01-13 10:33:31,012 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 10:33:31,231 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 10:33:31,231 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:46] - INFO: 断言结果【None】
+2020-01-13 10:33:31,233 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 10:33:58,848 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 10:33:58,850 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 10:33:58,851 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 10:33:59,716 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_apippff255uivudv03k9a023qhb.node_sales_api,LX-WXSRF-JTOKEN=5cafd57f-7917-402e-ac8a-104530b8e490】
+2020-01-13 10:33:59,718 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_apippff255uivudv03k9a023qhb.node_sales_api;LX-WXSRF-JTOKEN=5cafd57f-7917-402e-ac8a-104530b8e490】
+2020-01-13 10:33:59,719 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 10:34:00,582 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 10:34:00,583 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:47] - INFO: 断言结果【None】
+2020-01-13 10:34:00,584 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 10:37:17,595 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 10:37:17,597 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 10:37:17,597 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 10:37:18,088 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_apio4p2b2ild3vayc57fkieoltm.node_sales_api,LX-WXSRF-JTOKEN=9ee4f422-fbc6-4703-921b-fe7c09d35104】
+2020-01-13 10:37:18,088 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_apio4p2b2ild3vayc57fkieoltm.node_sales_api;LX-WXSRF-JTOKEN=9ee4f422-fbc6-4703-921b-fe7c09d35104】
+2020-01-13 10:37:18,089 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 10:37:18,314 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 10:37:18,316 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:46] - INFO: 断言结果【管理员】? =【管理员】
+2020-01-13 10:37:18,319 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 10:38:06,862 - C:/Users/jctong/Desktop/API/ApiTest/run_all_case.py[line:41] - INFO: 获取邮件参数,发送邮件...
+2020-01-13 10:38:07,180 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 10:38:07,180 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 10:38:07,180 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 10:38:08,021 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_api165o6pmhdivlylnoa2zb1d8jd.node_sales_api,LX-WXSRF-JTOKEN=1314e176-6f0c-40a1-a2b1-22f2951ab849】
+2020-01-13 10:38:08,021 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_api165o6pmhdivlylnoa2zb1d8jd.node_sales_api;LX-WXSRF-JTOKEN=1314e176-6f0c-40a1-a2b1-22f2951ab849】
+2020-01-13 10:38:08,022 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 10:38:08,250 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 10:38:08,250 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:46] - INFO: 断言结果【管理员】? =【管理员】
+2020-01-13 10:38:08,251 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:11:43,589 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:11:43,591 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:11:43,591 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:11:44,074 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:31] - INFO: 禁止重定向，获取response headers【sid=node_sales_apijuxwmgq1euoui9x8vjrbi5zv.node_sales_api,LX-WXSRF-JTOKEN=aeb28243-7570-4ccd-ad33-8b2217fa74de】
+2020-01-13 11:11:44,076 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:33] - INFO: 组装新的headers【sid=node_sales_apijuxwmgq1euoui9x8vjrbi5zv.node_sales_api;LX-WXSRF-JTOKEN=aeb28243-7570-4ccd-ad33-8b2217fa74de】
+2020-01-13 11:11:44,077 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:35] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 11:11:44,440 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 获取验证关键信息【管理员】
+2020-01-13 11:11:44,440 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:46] - INFO: 断言结果【管理员】? =【管理员】
+2020-01-13 11:11:44,442 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:30:12,199 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:30:12,201 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:30:12,202 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:30:13,471 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:32] - INFO: 禁止重定向，获取response headers【sid=node_sales_apicdec3nd4qm0i1jgz0ec7wnttm.node_sales_api,LX-WXSRF-JTOKEN=2bded741-25a0-470e-b5f5-70850fe5fb5c】
+2020-01-13 11:30:13,473 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:34] - INFO: 组装新的headers【sid=node_sales_apicdec3nd4qm0i1jgz0ec7wnttm.node_sales_api;LX-WXSRF-JTOKEN=2bded741-25a0-470e-b5f5-70850fe5fb5c】
+2020-01-13 11:30:13,473 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:36] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 11:30:13,805 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:44] - INFO: 获取验证关键信息【管理员】
+2020-01-13 11:30:13,805 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:47] - INFO: 断言结果【管理员】? =【管理员】
+2020-01-13 11:30:13,807 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:51:00,553 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:51:00,555 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:51:00,555 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:51:02,436 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:52:38,349 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:52:38,351 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:52:38,352 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:52:39,170 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:53:39,270 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:53:39,272 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:53:39,273 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:53:40,207 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:39] - INFO: 禁止重定向，获取response headers【[],[]】
+2020-01-13 11:53:40,255 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:54:21,385 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:54:21,388 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:54:21,388 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:54:22,156 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====
+2020-01-13 11:54:35,846 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:10] - INFO: =====测试开始=====
+2020-01-13 11:54:35,848 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:15] - INFO: 测试LWJ登录成功场景
+2020-01-13 11:54:35,848 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:17] - INFO: 加载初始URL【http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F】
+2020-01-13 11:54:36,381 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:39] - INFO: 禁止重定向，获取response headers【sid=node_sales_api1v4mzkmtpv6p0b12lg2ib6pms.node_sales_api,LX-WXSRF-JTOKEN=9d4c3cc9-3c2b-4f01-85a1-d74144e84219】
+2020-01-13 11:54:36,383 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:41] - INFO: 组装新的headers【sid=node_sales_api1v4mzkmtpv6p0b12lg2ib6pms.node_sales_api;LX-WXSRF-JTOKEN=9d4c3cc9-3c2b-4f01-85a1-d74144e84219】
+2020-01-13 11:54:36,383 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:43] - INFO: 加载登录验证URL【http://cloud.sales-staging.liweijia.com/services/ums/isLogin】
+2020-01-13 11:54:36,543 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:51] - INFO: 获取验证关键信息【管理员】
+2020-01-13 11:54:36,544 - C:\Users\jctong\Desktop\API\ApiTest\case\web\LWJ_case.py[line:54] - INFO: 断言结果【管理员】? =【管理员】
+2020-01-13 11:54:36,545 - C:\Users\jctong\Desktop\API\ApiTest\case\mybase.py[line:17] - INFO: =====测试结束=====

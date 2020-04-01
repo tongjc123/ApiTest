@@ -11,8 +11,8 @@ class WriteResult():
 
 
     def writeresult(self,row,value):
+        print('===========测试结果写入interface.xls========')
         file_path = os.path.join(bases.PARAM_PATH,bases.RESULT_NAME)
-        print(file_path)
         workbook = xlrd.open_workbook(file_path)
        # sheets = workbook.sheet_names()
        # sheet_data = workbook.sheet_by_name(sheets[0])
