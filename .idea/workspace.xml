@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c0a3d5-dd92-4be3-b567-8f6bfc1a06d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323144148758.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323162152295.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323162206373.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323162422240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323172402723.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323172500579.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323180038837.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323184827395.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323184844641.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323212249963.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200323215001508.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324085400761.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324093017380.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324094206159.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324140300276.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324140338737.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324140400046.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200324140421072.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200329102405072.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401134808996.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401135826080.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401140227046.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401141314280.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401141438315.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401141527719.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401141643275.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401142658967.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401143559087.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200401143949081.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typora-user-images/image-20200402104841994.png" />
+    <list default="true" id="f6c0a3d5-dd92-4be3-b567-8f6bfc1a06d2" name="Default" comment="1.增加参数关联处理&#10;2.API测试结结果回写excel支持&#10;3.邮件多附件支持&#10;4.MarkDown文件更新&#10;5.同步Gitee">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323144148758.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323162152295.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323162206373.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323162422240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323172402723.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323172500579.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323180038837.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323184827395.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323184844641.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323212249963.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200323215001508.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324085400761.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324093017380.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324094206159.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324140300276.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324140338737.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324140400046.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200324140421072.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200329102405072.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401134808996.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401135826080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401140227046.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401141314280.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401141438315.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401141527719.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401141643275.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401142658967.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401143559087.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200401143949081.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typora-user-images/image-20200402104841994.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/web/ddt_newlogin_case.py" afterPath="$PROJECT_DIR$/case/web/ddt_newlogin_case.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -147,8 +146,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+            <state relative-caret-position="120">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -190,7 +189,6 @@
         <option value="$PROJECT_DIR$/case/web/jsonpathtest.py" />
         <option value="$PROJECT_DIR$/common/myemail.py" />
         <option value="$PROJECT_DIR$/common/log.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/common/getparam.py" />
         <option value="$PROJECT_DIR$/params/data.json" />
         <option value="$PROJECT_DIR$/common/requestMethod.py" />
@@ -198,6 +196,7 @@
         <option value="$PROJECT_DIR$/common/setting.py" />
         <option value="$PROJECT_DIR$/run_all_case.py" />
         <option value="$PROJECT_DIR$/case/web/ddt_newlogin_case.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -228,6 +227,11 @@
             <path>
               <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585736366096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.增加参数关联处理&#10;2.API测试结结果回写excel支持&#10;3.邮件多附件支持&#10;4.MarkDown文件更新&#10;5.同步Gitee">
+      <created>1585797611020</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585797611020</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -777,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="120">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
