@@ -40,7 +40,6 @@ class NewLoginCase(MyBase):
 
                         if method == 'delete':
                             url = os.path.join(url, depend_data) #将url拼接
-
                         else:
                             data = json.loads(json.dumps(data).replace('$'+str(j+1),depend_data))  #以此替换json中的$1,$2.......
 
