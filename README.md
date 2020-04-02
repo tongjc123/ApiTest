@@ -4,7 +4,7 @@
 
 
 
-![](C:\Users\jctong\AppData\Roaming\Typora\typora-user-images\image-20200401134808996.png)
+![](..\typora-user-images\image-20200401134808996.png)
 
 本框架基于unittest,综合了很多大神的思想和实现方式。也有一点点自己不成熟的思考。python水平有限，槽点肯定很多，还有很多可优化封装的地方，暂时先用着吧，下个版本继续优化。
 
