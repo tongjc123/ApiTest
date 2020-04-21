@@ -9,6 +9,7 @@ class OpExcel():
     def __init__(self):
         # 用一个字典来接收每个请求返回的数据，作为后面有参数关联的全局参数
         self.result_dict = {}
+
     #从excel提取list[dict{}]
     def get_param(self,sheet_name):
         param_path = os.path.join(bases.PARAM_PATH, bases.PARAM_NAME)
@@ -22,12 +23,10 @@ class OpExcel():
                     row_data = sheet.row_values(i)      #获取每行数据
                     data = dict(zip(title,row_data))    #将第标题和对应数据组装成dict
                     params_list.append(data)
-
             except Exception as e:
                 atp_log.error('【%s】excel参数获取失败，错误信息为%s'%(param_path,e))
         else:
             atp_log.error('参数文件不合法>>%s'%param_path)
-
         return params_list
 
     """
@@ -55,6 +54,11 @@ class OpExcel():
 
     #获取json中参数
     def get_json_data(self,keyname):
+        """
+        从json文件取对应参数
+        :param keyname:
+        :return:
+        """
         json_path = os.path.join(bases.PARAM_PATH,"data.json")
         with open(json_path) as f:
             data = json.loads(f.read())[keyname]  #读取对应的json参数
@@ -62,6 +66,11 @@ class OpExcel():
 
     #多个依赖参数分割
     def relation_data(self,str):
+        """
+
+        :param str:
+        :return:
+        """
         list_data = []
         if str !='':
             if ',' in str:
@@ -72,29 +81,44 @@ class OpExcel():
 
     #将读取到的参数进行处理
     def convert_data(self,sheet):
+        """
+        根据参数文档中data字段，判断是否需要从json文件提取对应数据。
+        如果本身为json直接转为dict即可
+        有些json参数特别大，仅用excel难以管理故使用json文件，需从json文件取数据。
+        :param sheet: 读取的sheet名
+        :return: [data1{},data2{}...]
+        """
         data = self.get_param(sheet)
         for i in data:
             if i['data'] != '':
                 if i['data'].endswith('}'):  #如果以｝结尾，表示本身是json参数
                     i['data'] = json.loads(i['data'])   #本身是json，直接转换为字典即可
-                try:
+                else:
                     i['data'] =self.get_json_data(i['data'])   #否则就取json文件中对应的json
-                except:
-                    atp_log.info("不需从json文件取数据")
+                    #atp_log.info("不需从json文件取数据")
         return data
 
     #关联参数提取
-    def get_response_data(self,str, regex):
-        if str !='' and regex !='':
+    def get_response_data(self, str, regex):
+        """
+        从接口返回结果，根据regex表达式取出对应数据
+        :param str: 接口返回结果
+        :param regex: jsonpath表达式
+        :return:
+        """
+        if str !=''and str.endswith('}') and regex !='':
             pyjson = json.loads(str)   #返回参数的json字串转换为dict
+            #pyjson = eval(str)
             data =jsonpath.jsonpath(pyjson,regex)  #根据jsonpath表达式查找对应数据
-            if isinstance(data,list):
+            if isinstance(data, list):
                 return data[0]  #jsonpath提取返回结果为list
             else:
                 atp_log.error('关联参数获取为None')
                 return ''
+        elif str !=''and str.endswith('>') and regex !='':
+            atp_log.error('暂时没有支持xml解析，待下个版本优化')
         else:
-            atp_log.info('返回参数为空或Excel中depend_data为空')
+            atp_log.info('接口返回数据为空或Excel中depend_data为空')
 
 
 opexcel = OpExcel() #实例化
@@ -109,7 +133,8 @@ if __name__ == '__main__':
 
     #print(opexcel.get_param("LoginCase"))
 
-    print(opexcel.relation_data('smaaa,hshha'))
+    #print(opexcel.relation_data('smaaa,hshha'))
+    print(opexcel.get_response_data('{"a":"123","c":{"b":"456"}}','$.a'))
 
 
 

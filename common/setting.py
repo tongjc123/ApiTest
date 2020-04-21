@@ -39,6 +39,6 @@ class Setting():
         # 用例参数文件名
         self.PARAM_NAME = 'interface.xlsx'
         # 测试结果文件名
-        self.RESULT_NAME = 'interface.xls'
+        self.RESULT_NAME = 'result'+times+'.xls'
 
 bases = Setting()   #实例化Setting

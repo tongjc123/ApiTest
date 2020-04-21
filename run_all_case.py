@@ -29,7 +29,7 @@ def run_case():
                                                   verbosity=2,
                                                   title="API自动化测试报告",
                                                   description="本次测试是针对慧养猪API接口串联测试，结果如下：",
-                                                  retry=2,
+                                                  retry=0,
                                                   save_last_try=False
                                                   )
         runner.run(add_case())
@@ -38,8 +38,8 @@ def run_case():
 if __name__ == '__main__':
 
     smtp_dict = bases.SMTP_DICT #获取参数
-    result = os.path.join(bases.PARAM_PATH,bases.RESULT_NAME) #测试结果
-    atp_log.info("获取邮件参数,准备将测试结果写入邮件...")
+    result = os.path.join(bases.REPORT_PATH,bases.RESULT_NAME) #测试结果
+   # atp_log.info("获取邮件参数,准备将测试结果写入邮件...")
     #mail_send.send_mail(smtp_dict, [run_case(),result])  #直接调用邮件发送即可运行所有用例
     run_case()
 
