@@ -16,7 +16,7 @@ class MailSend():
             "send_user": "发送邮件的邮箱 ex:am1122@126.com",
             "send_pwd": "发送邮件的邮箱密码 ex:mima",
             "sender": "发件人邮箱用于显示收到邮件中的发件人 ex:am1122@126.com",
-            "receiver": "收件人邮箱 ex:zhangmin@hidtest.cn",多个收件人可以写成list
+            "receiver": "收件人邮箱 ",多个收件人可以写成list
             "subject": "邮件主题 ex:自动化测试报告"
             "from":"邮件发送方 ex:smartpig自动化平台"
         }

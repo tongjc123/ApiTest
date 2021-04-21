@@ -12,7 +12,7 @@ class WriteResult():
 
 
     def writeresult(self,row,value):
-        print('===========测试结果写入result表格========')
+        print('===========测试结果写入result 表格========')
         self.file_path = os.path.join(bases.REPORT_PATH, bases.RESULT_NAME)
         self.workbook = xlrd.open_workbook(self.file_path)
         self.new_workbook = copy(self.workbook)  # 复制新的工作表

@@ -11,7 +11,7 @@ class Setting():
         #"send_pwd": "lqtfbacgzwwkhjbg",  # 发送邮件的账号密码
         "send_pwd" : "Tt1140720529",
         "sender": "tongjc@newhope.cn",  # 显示在邮件中的发件人,必须与send_user一致
-        "receiver": ["1162856094@qq.com","1059218389@qq.com"],  # 收件邮箱地址
+        "receiver": ["1162856094@qq.com","chengh@newhope.cn","duyaolin@newhope.cn"],  # 收件邮箱地址
         "subject": "smartpig自动化测试报告",  # 邮件主题
         "from": "smartpig自动化平台"  #邮件发送方
     }

@@ -46,7 +46,7 @@ class OpExcel():
         atp_log.info("共获取到%s条用例参数"%case_num)
         return param_dic
     """
-    def get_test_data(self,params_list,case_name):
+    def _get_test_data(self,params_list,case_name):
         #本方法暂时没用
         for case_data in params_list:
             if case_name == case_data['case_name']: #当从列表中找到对应用例名的数据时，返回该字典
@@ -60,14 +60,13 @@ class OpExcel():
         :return:
         """
         json_path = os.path.join(bases.PARAM_PATH,"data.json")
-        with open(json_path) as f:
+        with open(json_path,encoding='utf-8') as f:
             data = json.loads(f.read())[keyname]  #读取对应的json参数
         return data
 
     #多个依赖参数分割
     def relation_data(self,str):
         """
-
         :param str:
         :return:
         """
@@ -131,7 +130,7 @@ if __name__ == '__main__':
     # res = req.post(url =params[2]['url'] ,headers = {'RSESSIONID_NAME':'82f8192546aa5d5b4a3099e8361ec525'},json = params[2]['data'])
     # print(res.text)
 
-    #print(opexcel.get_param("LoginCase"))
+    print(opexcel.get_param("LoginCase"))
 
     #print(opexcel.relation_data('smaaa,hshha'))
     print(opexcel.get_response_data('{"a":"123","c":{"b":"456"}}','$.a'))

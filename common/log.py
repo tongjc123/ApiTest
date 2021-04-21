@@ -14,7 +14,7 @@ class MyLogger():
         return level.get(str)
 
     def __init__(self,file_name,level='info',backCount=5,when='D'):
-        logger=logging.getLogger()                   # 先实例化一个logger对象，先创建一个办公室
+        logger=logging.getLogger()                   # 先实例化一个logger对象
         logger.setLevel(self.get_level(level))       # 设置日志的级别的人
         cl=logging.StreamHandler()                   # 负责往控制台输出的人
         bl = handlers.TimedRotatingFileHandler(filename=file_name, when=when, interval=1, backupCount=backCount,encoding='utf-8')

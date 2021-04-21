@@ -13,16 +13,18 @@ class LWJ_Case(MyBase):
     u"""LWJ登录成功"""
     def test_login_success(cls):
         atp_log.info("测试LWJ登录成功场景")
-        url= 'http://cloud.sales-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fcloud.sales-staging.liweijia.com%2F'
+        url= 'http://siteadmin-staging.liweijia.com/security/lv_check?type=normal&returnUrl=http%3A%2F%2Fsiteadmin-staging.liweijia.com%2F'
         atp_log.info("加载初始URL【%s】"%url)
         header = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+            "laravel_session":"hgsjpU63z4cDebMX6XvqWQ9jtaHEirCyP2qn8fpB",
+            "sid" : "node_aojia_25513rw1j4iqkiml18o130eh8n0y4.node_aojia_255",
+            "LX-WXSRF-JTOKEN":"93910953-6139-4e9e-8ea7-595c6cf6c4d9"
         }
         data = {
             "lv_username": "admin@liweijia.com",
             "lv_password": "!QAZ1qaz"
         }
-        res = cls.s.post(url= url, headers = header, data= data, verify = False, allow_redirects = False)
+        res = requests.post(url= url, headers = header, data= data, verify = False, allow_redirects = False)
         print(res.headers)
         #字符串操作
         #cookie_sid = res.headers['Set-Cookie'].split(';')[0]

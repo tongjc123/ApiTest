@@ -19,6 +19,7 @@ class NewLoginCase(MyBase):
     u"""慧养猪接口测试"""
     params = opexcel.convert_data("LoginCase")
 
+
     @ddt.data(*params)
     def test_run_case(cls,i):
         result_dict = opexcel.result_dict   #全局字典
@@ -45,7 +46,6 @@ class NewLoginCase(MyBase):
                         if method == 'delete':
                             if depend_data !='':
                                 url = os.path.join(url, depend_data) #将url拼接
-
                         else:
                             data = json.loads(json.dumps(data).replace('$'+str(j+1),depend_data))  #以此替换json中的$1,$2.......
 
